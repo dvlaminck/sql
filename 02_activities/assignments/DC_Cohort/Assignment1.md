@@ -14,10 +14,10 @@
     * Open a private window in your browser. Copy and paste the link to your pull request into the address bar. Make sure you can see your pull request properly. This helps the technical facilitator and learning support staff review your submission easily.
 
 Checklist:
-- [ ] Create a branch called `assignment-one`.
-- [ ] Ensure that the repository is public.
-- [ ] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
-- [ ] Verify that the link is accessible in a private browser window.
+- [X] Create a branch called `assignment-one`.
+- [X] Ensure that the repository is public.
+- [X] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
+- [X] Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via our Slack. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
 
@@ -209,5 +209,12 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 
 ```
-Your thoughts...
+In present day, databases are involved in many daily activities and decisions we make. In fact, the linked article revealed that in Pakistan, databases are central to one’s identity. With this being said, it is important to consider that databases are not always completely neutral; instead, they reflect the decisions of those who built them in the first place.
+
+As outlined within the article, databases focused on identification often rely heavily on the social structures at a given point in time. The most glaring case of this is gender, which was often once coded as binary, failing to consider how this may change in the future. These identification databases can also be biased when it comes to ethnicity and sexual orientation. For example, using fixed drop-down menus may force an individual into a category they do not completely align with. As a result, subsequent analyses of these data would inadequately, or even fail, to properly reflect these groups. 
+
+Another example of how databases embed value systems comes from financial systems (eg. Credit checks). Credit scores are often based on “objective” markers that indicate whether a customer can be deemed trustworthy. These markers, however, may not always be objective when you consider some groups who could fall through the cracks. For example, based on these systems, a long credit history indicates a person may be more trustworthy. But, for young adults or immigrants, they have likely not had the time to develop this credit history and as a result, may not receive an “objective” view on their trustworthiness.
+
+Together, these examples highlight how value systems often seep into the way databases are created and may influence decisions. Therefore, it is important to use a multi-disciplinary team and many perspectives to create these databases to try to limit human bias in how they are created.
+
 ```
