@@ -56,7 +56,12 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Method 1: One row per customer.
+This method would involve having a customer ID (PK) for every customer and each row would represent that single customer. When a customer changes their information (eg. Address), the information is changed in the appropriate column, and the old information is lost. This would be considered type 1 since the old information is overwritten and history cannot be accessed.
+
+Method 2: One row per change.
+This method would still contain the customer ID column, but instead of each row representing a customer, each row would represent a change to the information. With this table, you would include start_date and end_date columns to differentiate between entries (customer_id is not the sole PK). If an entry represents the current information, then the end_date would be NULL. Therefore, this would be type 2 since previous (historical) customer information is accessible, even if it changes.
+
 ```
 
 ***
@@ -191,5 +196,11 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+The linked story outlines the extensive human involvement within artificial intelligence (AI) and how at the core of every model, is human intervention. The major example used by the author in this case was the popular ImageNet model, consisting of 15 million images, which were all annotated by humans. As such, it is likely that human biases also find their way into these models – a concept that highlights the need for ethical considerations.
+
+A popular saying in machine learning is that “your model is only as good as the data you give it.” It captures the idea of “garbage in, garbage out” and therefore, the importance of the training set when it comes to effective modelling. If your training label is human-annotated, however, then the effectiveness of your model should correlate directly to how well these humans are able to annotate. As described in the article, Vicki notes that some of the annotators for ImageNet were only being given $10 per hour. As a result, their annotations may not be as accurate as someone getting paid say $25 per hour. This highlights a key discrepancy that wealth and class may play a role in AI; if someone can afford to pay someone more to annotate, then it’s more likely that their training set is more accurately annotated, also having downstream impacts on the modelling stage.
+
+The article also highlights that after-the-fact validation of images for ImageNet presents some implicit biases. For example, they highlight that in the “people” subtree, there are offensive tagging terms such as “unsafe”. Now, the research group is starting to backtrack and re-annotate by hand to remove these biases. 
+
+With the rise and rapid growth of AI, it is becoming increasingly important to consider these biases ahead of training and implementation of models. If these factors are not considered, then these biases embedded within training will impact the decisions of models. And, with AI infiltrating many major fields such as health care, these factors could have life-altering impacts such as favouring certain races/genders in disease diagnosis.
 ```
